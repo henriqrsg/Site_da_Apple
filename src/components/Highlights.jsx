@@ -46,7 +46,7 @@ function Highlights() {
                     <h2 className="text-4xl font-bold mb-10">Sistema de câmera Pro avançado</h2>
                     <div className="grid grid-cols-3 md:grid-cols-3 gap-7 mx-auto max-w-8xl">
                         {specs.map((spec, index) => (
-                            <div key={index} className="text-center bg-gray-900 rounded-2xl p-8 hover:bg-gray-800 transition-all durant-300 hover:scale-105 cursor-pointer">
+                            <div key={index} className="text-center bg-gray-900 rounded-2xl p-8 hover:bg-gray-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                                 <h3 className={`text-4xl mb-3 font-bold ${spec.color}`}>{spec.value}</h3>
                                 <h4 className= "text-white font-semibold mb-2">{spec.label}</h4>
                                 <p className="text-gray-400 ">{spec.label2}</p>

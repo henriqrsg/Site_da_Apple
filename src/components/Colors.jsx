@@ -3,9 +3,9 @@ import { useState } from 'react';
 function Colors() {
 
     const colors = [
-        {id: 'orange', name: 'Titânio Laranja', image: '../../public/img/iphone-orange.png', colorClass: 'bg-orange-500'},
-        {id: 'blue', name: 'Titânio Azul', image: '../../public/img/iphone-blue.png', colorClass: 'bg-blue-500'},
-        {id: 'silver', name: 'Titânio Cinza', image: '../../public/img/iphone-silver.png', colorClass: 'bg-gray-300'}
+        {id: 'orange', name: 'Titânio Laranja', image: '/img/iphone-orange.png', colorClass: 'bg-orange-500'},
+        {id: 'blue', name: 'Titânio Azul', image: '/img/iphone-blue.png', colorClass: 'bg-blue-500'},
+        {id: 'silver', name: 'Titânio Cinza', image: '/img/iphone-silver.png', colorClass: 'bg-gray-300'}
     ];
 
     const models = [
@@ -13,10 +13,10 @@ function Colors() {
         {name: 'Pro', screen: 'Tela de 6.3 polegadas com ProMotion 120hz e Always-On display', storage: '128GB, 256GB ou 512GB', battery: 'Bateria com até 29h de vídeo', weight: '199g'}
     ];
 
-    const [selectedColor, setselectedColor] = useState('orange')
+    const [selectedColor, setSelectedColor] = useState('orange')
 
     return (
-        <section id="colors" className="bg-black py-20 px-8" id="cores">
+        <section className="bg-black py-20 px-8" id="cores">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl mb:text-6xl font-bold mb-4">Escolha sua cor</h2>
@@ -39,7 +39,7 @@ function Colors() {
 
                 <div className="flex flex-wrap justify-center items-center gap-5">
                     {colors.map(color =>(
-                        <button key={color.id} onClick={() => setselectedColor(color.id)} className="relative transition-all duration-300 cursor-pointer" >
+                        <button key={color.id} onClick={() => setSelectedColor(color.id)} className="relative transition-all duration-300 cursor-pointer" >
                             <div className={`w-16 h-16 rounded-full border-4 ${color.colorClass} ${selectedColor === color.id ? 'border-white' : 'border-gray-600'}`}></div>
                         </button> 
                     ))}
@@ -61,7 +61,7 @@ function Colors() {
                 </div>
 
                 <div className="text-center mt-16" id="comprar">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-full text-lg font-medium transition-all durant-300 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer">Compre agora a partir de R$ 9.299,00</button>
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer">Compre agora a partir de R$ 9.299,00</button>
                     <p className="text-gray-400 mt-4">Ou em até 12x de 774,92 sem juros</p>
                 </div>
             </div>

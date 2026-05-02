@@ -16,13 +16,13 @@ const specs = [
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-16">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all durant-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer">Compre agora</button>
-                <button className="border-2 border-white rounded-full hover:bg-white hover:text-black text-white px-8 py-4 text-lg font-medium transition-all durant-300 hover:scale-105 cursor-pointer">Saiba mais</button>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer">Compre agora</button>
+                <button className="border-2 border-white rounded-full hover:bg-white hover:text-black text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer">Saiba mais</button>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto max-w-6xl">
                 {specs.map((spec, index) => (
-                    <div key={index} className="text-center bg-gray-900 rounded-2xl p-6 hover:bg-gray-800 transition-all durant-300 hover:scale-105 cursor-pointer">
+                    <div key={index} className="text-center bg-gray-900 rounded-2xl p-6 hover:bg-gray-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                         <p className={`text-3xl mb-3 font-bold ${spec.color}`}>{spec.value}</p>
                         <p className= "text-gray-300">{spec.label}</p>
                     </div>
